@@ -16,7 +16,50 @@ h1, h3 {
 img {
   border-radius: 50%;
   width: 130px;
-  border: 2px black solid;*/
+  border: 2px black solid;
+}
+#wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+
+.hover {
+  display: block;
+  margin-right: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  width: 150px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: .5s ease;
+  background-color: rgba(190, 180, 180, 0.8);
+}
+
+#wrapper:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: #A31621;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 ul {
@@ -82,7 +125,7 @@ a {
   font-size: 24px;
 }
 
-li:hover {
+#all_skills li:hover {
    -webkit-transform: scale(1.2);
 }
 
